@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "Categories"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
@@ -10,3 +10,16 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+docs:
+- title: Python
+  children:
+    - title: "Study"
+      url: study/
+      category: "study"
+    - title: "Group"
+      url: group/
+      category: "group"
+- title: Database
+  url: database/
+- title: Note
+  url: note/
