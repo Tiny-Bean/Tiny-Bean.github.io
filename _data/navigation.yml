@@ -10,16 +10,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-docs:
-- title: Python
+
+sidebar-category:
+- title: NLP
   children:
-    - title: "Study"
-      url: study/
-      category: "study"
-    - title: "Group"
-      url: group/
-      category: "group"
+    - title: "python"
+      url: "/python"
+    - title: "AI"
+      url: "/AI"
 - title: Database
-  url: database/
+  url: "/database"
 - title: Note
-  url: note/
+  url: "/note"
