@@ -16,7 +16,13 @@ layout: archive
     {% for category in site.categories %}
       {% if category[1].size == i %}
         <li>
-          <a href="#{{ category[0] | slugify }}">
+          <!-- 수정된 부분 시작 -->
+          {% if category[0] == "python" %}
+            <a href="/categories/python">
+          {% else %}
+            <a href="#{{ category[0] | slugify }}">
+          {% endif %}
+          <!-- 수정된 부분 끝 -->
             <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
