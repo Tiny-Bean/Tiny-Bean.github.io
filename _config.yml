@@ -292,3 +292,6 @@ defaults:
       related: true
       sidebar:                  # 추가한 부분
         nav: "sidebar-category" # 추가한 부분
+      sidebar_main: true     # 요거 추가(두번째 시도 ...)
+
+future: true
