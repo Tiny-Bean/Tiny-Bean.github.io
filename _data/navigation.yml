@@ -11,14 +11,14 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-sidebar-category:
+docs:
 - title: NLP
   children:
     - title: "python"
-      url: "/python"
+      url: /categories/python.md
     - title: "AI"
-      url: "/AI"
+      url: /categories/AI.md
 - title: Database
-  url: "/database"
+  url: /categories/DB.md
 - title: Note
-  url: "/note"
+  url: /categories/diary.md
