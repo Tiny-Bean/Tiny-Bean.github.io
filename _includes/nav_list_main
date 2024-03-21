@@ -1,4 +1,4 @@
- {%assign sum = site.posts | size %}
+<!-- {%assign sum = site.posts | size %}
   <nav class="nav__list">
     <input id="ac-toc" name="accordion-toc" type="checkbox" />
     <label for="ac-toc">토글 메뉴</label>
@@ -39,4 +39,49 @@
               </ul>            
         </li>
     </ul>
-  </nav>
+  </nav> -->
+  
+  {% assign sum = site.posts | size %}
+<nav class="nav__list">
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">토글 메뉴</label>
+    <ul class="nav__items" id="category_tag_menu">
+        <li>
+            📂 <span style="">전체 글 수: {{ sum }} 개</span> 
+        </li>
+        <li>
+            <span class="nav__sub-title">NLP</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python" %}
+                        <li><a href="/categories/python"> python ({{ category[1].size }})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "AI" %}
+                        <li><a href="/categories/AI">AI ({{ category[1].size }})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">DATABASE</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DB" %}
+                        <li><a href="/categories/DB">{{ category[0] }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">NOTE</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "diary" %}
+                        <li><a href="/categories/diary">diary Dev ({{ category[1].size }})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>            
+        </li>
+    </ul>
+</nav>
+
