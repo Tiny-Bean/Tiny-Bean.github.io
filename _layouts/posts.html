@@ -12,6 +12,18 @@ layout: archive
         <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
       </a>
     </li>
+    <!-- python 카테고리 링크 추가 -->
+    <li>
+      <a href="/categories/python">
+        <strong>Python</strong> <!-- 카테고리 이름 -->
+        <span class="taxonomy__count">
+          {% assign python_posts = site.categories.python %}
+          {{ python_posts | size }} <!-- python 카테고리 게시물 수 -->
+        </span>
+      </a>
+    </li>
+  </ul>
+
   {% endfor %}
 </ul>
 
