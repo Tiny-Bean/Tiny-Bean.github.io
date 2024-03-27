@@ -11,7 +11,7 @@ ICT 멘토링 프로그램에 멘티로 참여하게 됐다.
 
 네 명의 멘티 중 나를 포함한 세 명이 같은 학교에 재학 중이라
 
-본격적인 프로젝트 시작에 앞서 함께 스터디를 진행하기로 했다!
+본격적인 프로젝트 시작에 앞서 함께 스터디를 진행하기로 했다!    
 
   
 우선 데이터 분석과 AI개발에 널리 쓰이는 파이썬 기초를 다지기 위해
@@ -22,23 +22,23 @@ ICT 멘토링 프로그램에 멘티로 참여하게 됐다.
 
 당시에 교재의 일부만 사용했고 기억이 많이 날아갔기 때문에
 
-한 번 훑고 넘어가면 좋을 것 같다.
+한 번 훑고 넘어가면 좋을 것 같다.   
 
   
 이번 주는 *part1: 파이썬의 기초* 의 *chapter05* 까지 공부하고
 
 각자 맡은 부분을 포스팅 해 발표하기로 했다.
 
-내가 맡은 부분은 *2.2 변수의 연산* 과 *chapter04: 함수* 전체다. 
+내가 맡은 부분은 *2.2 변수의 연산* 과 *chapter04: 함수* 전체다.     
 
 ` ** 이왕 공부하면서 포스팅하는 거... 맡은 부분 외에도 공부한 것들은 기록해보려고 한다. ** `
 
 ---
 
-## Part1: 파이썬의 기초
-### chapter02: 변수와 입.출력 함수
+# Part1: 파이썬의 기초
+## chapter02: 변수와 입.출력 함수
 
-#### 2-1. 데이터형과 변수
+### 2-1. 데이터형과 변수
 
 ##### 1) 데이터형(자료형): 컴퓨터에서 다뤄지는 다양한 **데이터 값들의 유형**을 의미함.
 
@@ -86,7 +86,7 @@ type(exist)
 
 
 
-#### 2-2. 변수의 연산
+### 2-2. 변수의 연산
 
 |산술연산자 | 관계연산자 | 논리연산자 | 비트연산자
 
@@ -124,27 +124,26 @@ a != b #6. a는 b와 같지 않다
 
 > **출력 결과**
 
-  a = 3
-  b = 5
-  a > b #1. a는 b보다 크다
-  a < b #2. a는 b보다 작다
-  a >= b #3. a는 b보다 크거나 같다
-  a <= b #4. a는 b보다 작거나 같다
-  a == b #5. a는 b와 같다
-  a != b #6. a는 b와 같지 않다
-
+  False
+  True
+  False
+  True
+  False
+  True
+  
 
 ##### 3) 논리 연산자
 
 - 2개의 값이나 변수 간에 논리적인 연산을 수행함
 - 논리 연산자의 결과는 True / False
 
-> - end: 그리고
+> 논리연산자
+  - end: 그리고
   - or: 또는
   - not: 부정(아니다)
 
   논리연산자 진리표
-  ![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.dotnetnote.com%2Fdocs%2Fcommon%2F11-03-table-truth-table.png&tbnid=2pW7HS7VVkIYHM&vet=12ahUKEwiaqbyxtJGFAxUjc_UHHVdECU0QMygDegQIARBY..i&imgrefurl=https%3A%2F%2Fwww.dotnetnote.com%2Fdocs%2Fcsharp%2Frelational-logical-operator%2F&docid=z3xy2CnskuAHqM&w=640&h=291&q=%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90%20%EC%A7%84%EB%A6%AC%ED%91%9C%20%ED%8C%8C%EC%9D%B4%EC%8D%AC&hl=ko&ved=2ahUKEwiaqbyxtJGFAxUjc_UHHVdECU0QMygDegQIARBY)
+  ![image](https://www.dotnetnote.com/docs/common/11-03-table-truth-table.png)
 
 
 논리 연산자의 코드 예시도 살펴보자.
@@ -155,9 +154,8 @@ b = 5
 ```
 
 > **출력 결과**
-  a = 3
-  b = 5
-  (a > b) and (a != b)
+  
+  False
 
   + (a > b)는 false 이고 (a != b)는 True,   and 연산자는 둘 다 True 인 경우에만 True 값을 출력하므로 결과는 False.
 
@@ -170,23 +168,159 @@ b = 5
 
 > **5개의 비트 연산자**
  + & : 비트 단위 and
- + | : 비트 단위 or
+ + \| : 비트 단위 or
  + ^ : 비트 단위 XOR (배타적 논리합, 두 명제의 진리값이 다를 때 True)
  + ~ : 비트 단위 not
  + << : 비트 단위 왼쪽 시프트
- + >> : 비트 단위 오른쪽 시프트
+ + \>\> : 비트 단위 오른쪽 시프트
 
 
 비트연산자 진리표
-![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQUoY2%2FbtrpPEGsyIE%2FHtdQHrgG9hiZYH3k6uAOC0%2Fimg.png&tbnid=D9wHeFF4b1s3hM&vet=12ahUKEwjPjd6BupGFAxU0k68BHeR8AmUQMygFegQIARBe..i&imgrefurl=https%3A%2F%2Fblog.hexabrain.net%2F92&docid=IWacXSd3wPFbvM&w=683&h=260&q=%EB%B9%84%ED%8A%B8%EC%97%B0%EC%82%B0%EC%9E%90%20%EC%A7%84%EB%A6%AC%ED%91%9C%20%ED%8C%8C%EC%9D%B4%EC%8D%AC&hl=ko&ved=2ahUKEwjPjd6BupGFAxU0k68BHeR8AmUQMygFegQIARBe)
+![image](https://blog.kakaocdn.net/dn/QUoY2/btrpPEGsyIE/HtdQHrgG9hiZYH3k6uAOC0/img.png)
 
 
 ---
 
-### chapter04: 함수
+## chapter04: 함수
 
-#### 4-1. 사용자 정의 함수
+### 4-1. 사용자 정의 함수
 
-##### 1)
+모듈에서 지원하지 않는 기능이 필요하다면, 즉 나만의 함수가 필요하다면?  
+
+사용자 정의 함수를 사용!
+
+> ##### 함수의 기본 형식
+ def 함수명(입력인자):
+     명령문 1   
+     (명령문 2  
+     ...)
+     (return ...)   
+
+
+> ##### 함수의 유형
+
+|   유형     |     입력값     |   출력값(반환값)   |
+| :-------: | :----------: | :-------------: |
+|     1     |      X       |        X        |
+|     2     |      X       |        O        |
+|     3     |      O       |        X        |
+|     4     |      O       |        O        |
+
+
+##### <입력값이 있는 경우>
+
+함수의 입역값이 있다면 다음에 오는 괄호 란에 입력 인자를 나열하면 된다. (없으면 비워두기)   
+
+
+코드 예시를 통해 살펴보자.
+
+```python
+def double(num):
+    print(num, '의 제곱:', num+num)
+double(3) #3이 함수의 입력값
+```
+
+이 경우 double 함수는 어떤 값을 화면에 출력할 뿐, 함수가 어떤 값을 반환하는 것은 아니다. (반환값이 없기 때문!)  
+
+##### <반환값이 있는 경우>
+
+**함수의 반환은 반환값(함수가 계산한 값의 결과)를 함수를 호출한 곳으로 다시 돌려준다.**
+
+보통 함수의 마지막 부분에 위치, 다음과 같이 "return" 명령어를 사용한다.
+
+> **return([복수개]반환값 또는 변수)**
+
+
+##### <입력값이 없고 반환값도 없는 경우>
+
+```python
+def hello():
+    print('Hello!')
+hello() #함수를 호출한 것뿐, return 값은 없음
+```
+
+이 경우 "Hello!"가 출력되었다고 함수의 출력값(반환값)이 있는 게 아니다.
+
+함수릐 출력이란 **return**명령어가 있는 반환이 존재해야 한다!!
+
+
+##### <입력값과 출력값이 모두 있는 경우>
+
+```python
+def double(num):
+    return num*num #함수를 호출한 곳으로 반환값(num*num)을 돌려줌
+result = double(3) 
+print('%d의 제곱:%d' % (3, result))
+```
+
+이 경우 double 함수의 입력값은 3이고, return 명령문에 의해 함수를 호출한 곳으로 3의 제곱 값이 반환된다. 빈환된 값은 변수 result에 저장되어 "3의 제곱: 9"가 출력된다. 
+
+
+##### <단수 반환과 복수 반환>
+
+대부분의 다른 프로그래밍 언어와 달리 파이썬에서는 복수 개의 반환이 가능하다.
+
+코드 예시를 통해 살펴보자!
+
+
+우선, **단수 반환**은 호출한 함수가 반환하는 값이 1개라는 의미이다.
+
+```python
+def double(n):
+    square = n * n
+    return square #함수를 호출한 곳으로 반환값(num*num)을 돌려줌
+print(double(7)) #double 함수의 입력값은 7
+```
+
+print 함수 내부에서 double 함수를 호출했다.
+
+입력된 7의 값은 변수 n에 저장되고 7의 제곱값이 square에 저장된다. 
+
+return 명령문에 의해, square 값이 함수를 호출한 print 함수 쪽으로 반환되어 49가 출력된다.
+
+
+```python
+def add(a,b):
+    sum = a+ b
+    return sum #함수를 호출한 곳으로 반환값(sum)을 돌려줌
+print(add(3,5)) #입력값은 3과 5
+```
+
+위의 add()함수는 입력값이 2개다.
+
+3은 변수 a에, 5는 변수 b에 저장되며 둘을 더한 값인 8이 sum에 저장된다.
+
+return 명령문에 의해, 함수를 호출한 print 함수 쪽으로 sum 값이 반환되어 8이 출력된다.
+
+
+
+다음으로, 복수 반환에 대해서 알아보자.
+
+반환되는 값이 2개 이상일 대는 콤마로 나열하면 된다.
+
+```python
+def add_sub(a,b):
+    sum = a + b
+    diff = a - b
+    return sum, diff # 반환값 두 개를 콤마로 나열
+print(add_sub(3,5)) #입력값은 3과 5
+```
+
+출력 결과는 (8, -2) 이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### 
 
 #### 4-2. 함수의 응용
