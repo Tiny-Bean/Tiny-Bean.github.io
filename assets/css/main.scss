@@ -7,3 +7,15 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* 프로필 사진 위치 변경 */
+.author-profile {
+    position: absolute;
+    top: 100px; /* 상단에서 100px 아래로 이동 */
+    left: 20px; /* 왼쪽에서 20px 이동 */
+  }
+  
+  /* 프로필 사진 모양 변경 */
+  .author-avatar {
+    border-radius: 50%; /* 원 모양으로 변경 */
+  }
