@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Tiny Bean"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile copy.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Whatever I want!"
   location         : "Somewhere"
   email            : "ghd2909009@gmail.com"
