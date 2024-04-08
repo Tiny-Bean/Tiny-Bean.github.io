@@ -16,8 +16,8 @@ docs:
   children:
     - title: "python"
       url: /categories/python.md
-    - title: "AI"
-      url: /categories/AI.md
+    - title: "Deeplearning"
+      url: /categories/DeepLearning.md
 - title: Database
   url: /categories/DB.md
 - title: Note
