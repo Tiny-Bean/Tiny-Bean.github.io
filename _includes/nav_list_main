@@ -65,12 +65,12 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul> #DeepLearning 추가
-                { for category in site.categories }
-                    { if category[0] == "DeepLearning" }
-                        <li><a href="/categories/DeepLearning" class=""> DeepLearning ()</a></li>
-                    { endif }
-                { endfor }
+            <ul> 
+                {% for category in site.categories %}
+                    {% if category[0] == "DeepLearning" %}
+                        <li><a href="/categories/DeepLearning"> DeepLearning ({{ category[1].size }})</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
